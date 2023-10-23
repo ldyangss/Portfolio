@@ -14,7 +14,7 @@
 
 */
 body {
-    /* background-color: #dff4fe; */
+    background-color: #dff4fe;
     height: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -66,44 +66,24 @@ body {
     margin: 0 1rem;
 }
 
-
-.welcome {
-    display: grid;
-    grid-template-columns: min-content min-content min-content min-content;
-    align-items: center;
+/* welcome part */
+.welcontainer {
+    position: relative;
+}
+.welimg {
+    margin-top: 5rem;
     width: 100%;
     height: 300px;
-    background-color: #dff4fe;
 }
 
-.welport {
-    font-family: 'Black Ops One', cursive;
+.text_container h1 {
+    position: absolute;
+    font-family: 'Edu SA Beginner';
     color: #7f9098;
-    font-size: 2.25rem;
-    margin: 6rem 2rem 7rem 4rem;
-    width: 255px;
-}
-.diagonal-line {
-    width: 0;
-    height: 150px;
-    border-right: 1px solid #7f9098;
-    transform: rotate(40deg);
-    margin: 2rem 0 0 1rem;
+    top: 40%;
+    left: 55%;
 }
 
-.welname {
-    font-family: 'Black Ops One', cursive;
-    color: #7f9098;
-    font-size: 1rem;
-    margin: 7rem 0 0 1rem;
-    width: 100px;
-
-}
-
-.welimg {
-    width: 30px;
-    margin-top: 7rem;
-}
 
 /* Project */
 .project_items {
