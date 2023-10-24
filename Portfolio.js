@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
     function updateText(){
         
         characterIndex++
-        helloText.innerHTML =`<h1>Hello! I am Danyang, a <br>${careers[careerIndex].slice(0,characterIndex)}</h1>`;
+        helloText.innerHTML =`<h1>Hello! I am Danyang, a <br><br>${careers[careerIndex].slice(0,characterIndex)}</h1>`;
 
         if(characterIndex === careers[careerIndex].length){
             careerIndex++;

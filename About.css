@@ -1,16 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Changa:wght@400;600;700;800&family=Cute+Font&family=Edu+SA+Beginner:wght@600&family=Noto+Sans+Chorasmian&family=Rokkitt:ital,wght@0,400;0,800;1,800&family=Russo+One&family=Teko&display=swap');
-/*
-背景蓝 #dff4fe
-文字蓝 #b9d9fb
-文字黑 #020001
-标题灰蓝色 #7f9098
-段落灰蓝色#67757c
-藕粉色 #c8abc2
-灰粉色 #d7cbe0
-浅粉色 #f6dce6
-粉色 #ebbcc6
-
-*/
 
 body {
     height: 100%;
@@ -93,6 +81,7 @@ body {
 }
 .intro {
     font-family: 'Rokkitt';
+    letter-spacing: 0.5px;
     font-size: 120%;
     font-weight: 400;
     color: #67757c;
