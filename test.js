@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const helloText = document.querySelector(".text_container")
     const careers = ["Software Developer!", "VR Documentary Filmmaker!"];
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxTBMDolg32SoE5QpdrvgoNpWR0CCevQf9xhU5jBJLJ0ngmQ7amqX1ngIu9KvLPiDrv/exec'
-    const form = document.querySelector('form');
+    const form = document.forms['submit-to-google-sheet']
     const msgSpan = document.querySelector('.msg');
 
     let careerIndex = 0;
@@ -25,16 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const formData = new FormData(form);
-        fetch('https://script.google.com/macros/s/AKfycbxTBMDolg32SoE5QpdrvgoNpWR0CCevQf9xhU5jBJLJ0ngmQ7amqX1ngIu9KvLPiDrv/exec', {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
-      });
-});
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                console.log('Success!', response)
+                msgSpan.style.display = 'inline';
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+})
