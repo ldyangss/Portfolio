@@ -97,8 +97,8 @@ body {
 }
 .project_items {
     margin: 2rem 5rem 5rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .items {
@@ -111,6 +111,9 @@ body {
     box-shadow: 0 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
     justify-content: end;
+    aspect-ratio: 0.71;
+    width: calc((100% - 40px) / 3); 
+    height: auto;
 }
 .items:hover{
     transform: translateY(20px);
@@ -264,15 +267,15 @@ body {
 }
 
 .abm img {
-    width: 90%;
-    max-width: 800px;
+    width: 400px;
     height: auto;
 }
+
 .intro {
     font-family: 'Rokkitt';
     letter-spacing: 0.5px;
     font-size: 120%;
-    font-weight: 400;
+    font-weight: 510;
     color: #67757c;
 }
 
@@ -290,6 +293,126 @@ body {
     align-items: center;
 }
 
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.contact form{
+    width: 50%;
+    margin: 1rem 5rem 5rem 5rem;
+    text-align: right;    
+}
+form input, form textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: #67757c;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    font-family: 'Rokkitt';
+}
 
+/* submit */
+.contactbtn {
+    text-decoration: none;
+    position: relative;
+    background: #fff;
+    color: #ffff;
+    font-family: 'Changa';
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    padding: 10px 30px;
+    width: 150px;
+    text-align: center;
+    border: none;
+}
+
+.contactbtn:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 1px;
+    box-shadow: 0 0 35px var(--clr);
+
+}
+
+.contactbtn::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #dff4fe;
+}
+
+.contactbtn span {
+    position: relative;
+    z-index: 1;
+}
+
+.contactbtn i {
+position: absolute;
+inset: 0;
+display: block;
+}
+
+.contactbtn i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #dff4fe;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.contactbtn:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.contactbtn i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #dff4fe;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.contactbtn:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+.msg {
+    color: #67757c;
+    margin-right: 1rem;
+    display: none;
+}
+
+/* footer */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Rokkitt';
+    font-weight: bold;
+    color: #7f9098;
+    letter-spacing: 1px;
+}
 
 
