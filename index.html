@@ -11,14 +11,16 @@
 </head>
 <body>
     <!-- navbar -->
+    <div id="toppage"></div>
     <nav class="navbar">
         <div class="logo_part">
-            <span class="name">Danyang Li</span>
+            <a class="btnN" href="#toppage">Danyang Li</span>
             <img src="image/Logo_sheepgrey.png">
         </div>
         <div class="btn">
-            <a class="btnH" href="index.html">Projects</a>
-            <a class="btnA" href="About.html">About Me</a>
+            <a class="btnH" href="#Projects">Projects</a>
+            <a class="btnA" href="#AboutMe">About Me</a>
+            <a class="btnC" href="#ContactMe">Contact</a>
         </div>    
     </nav>
     <!-- welcome -->
@@ -28,13 +30,16 @@
     </div>
 
     <!-- project -->
-    <h1 class="categories">PROJECTS -</h1>
+    <div id="Projects"></div>
+    <h1 class="categories" id="Projects">PROJECTS -</h1>
     <div class="project_items">
         <div class="items">
             <img src="image/VR_Project.png">
             <div class="text_part">
                 <h1 class="project_title">Virtual Reality Projects</h1>
-                <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nobis minus dolor qui dolorem inventore maiores laudantium neque quo adipisci modi, nihil, mollitia eius laboriosam incidunt nisi minima in dolores!</p>
+                <p class="project_info">- JavaScript-based project.<br>- Developed using HTML, CSS, and JS.<br>- Integrated a VR video into the web page using the Aframe framework.
+                    
+                </p>
                 <a href="https://ldyangss.github.io/VideoPlayer/VR.html" class="infobtn" target="_blank">
                     Watch Now
                     <div class="infobtn__horizontal"></div>
@@ -47,7 +52,7 @@
             <img src="image/PairsGame.png">
             <div class="text_part">
                 <h1 class="project_title">Pairs Game</h1>
-                <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nobis minus dolor qui dolorem inventore maiores laudantium neque quo adipisci modi, nihil, mollitia eius laboriosam incidunt nisi minima in dolores!</p>
+                <p class="project_info">- Engaging matching game.<br>- Crafted using HTML, CSS, and JS.<br>- Features a timer and a card-flipping mechanism.</p>
                 <a href="https://ldyangss.github.io/Pairs_Game/" class="infobtn" target="_blank">
                     Play Now
                     <div class="infobtn__horizontal"></div>
@@ -57,10 +62,10 @@
         </div>
         
         <div class="items">
-            <img src="image/DataBase.png">
+            <img src="image/Database.png">
             <div class="text_part">
-                <h1 class="project_title">Data Base</h1>
-                <p class="project_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nobis minus dolor qui dolorem inventore maiores laudantium neque quo adipisci modi, nihil, mollitia eius laboriosam incidunt nisi minima in dolores!</p>
+                <h1 class="project_title">Database</h1>
+                <p class="project_info">- Developed using Python.<br>- Represents a filmflix database.<br>- Presented on the Replit platform.</p>
                 <a href="https://ldyangss.github.io/FilmFlix_Database/FilmApp.html" class="infobtn" target="_blank">
                     Open
                     <div class="infobtn__horizontal"></div>
@@ -72,10 +77,15 @@
     <div class="gap"></div>
 
     <!-- About Me -->
+    <div id="AboutMe"></div>
     <h1 class="categories">About Me -</h1>
     <div class="abm">
         <div class="img_container">
             <img src="image/DY.png">
+            <div class="social_media">
+                <a href="https://www.linkedin.com/in/danyang-li-a3a629223" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ldyangss?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <p class="intro">Transitioning from VR filmmaking to a budding Junior Software Developer, my journey reflects a blend of creative and technical prowess. My recent completion of the self-funded JUST IT training course epitomizes my dedication to diving into the IT realm, backed by a foundational grasp of HTML, JavaScript, and Python. The experiences I garnered from managing digital content and directing high-impact projects have fine-tuned my communication and problem-solving abilities, assets I aim to leverage in my next role as a Junior Developer. Driven by the same zeal that led to award-winning documentaries, I am eager to embrace challenges in a stimulating environment to further my IT skills. My goal is to develop as an IT professional, engaging in meaningful projects that push my technical boundaries and contribute to a larger positive impact. Through this transition, I aspire to meld my storytelling background with newfound software expertise, contributing a unique perspective to the software development domain.</p>    
     </div>
@@ -100,6 +110,7 @@
     <div class="gap"></div>
 
     <!-- Contact -->
+    <div id="ContactMe"></div>
     <h1 class="categories">Contact Me -</h1>
     <div class="contact">
         <form name="submit-to-google-sheet">

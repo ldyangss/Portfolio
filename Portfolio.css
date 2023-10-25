@@ -1,26 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Changa:wght@400;600;700;800&family=Cute+Font&family=Edu+SA+Beginner:wght@600&family=Noto+Sans+Chorasmian&family=Rokkitt:ital,wght@0,200;0,800;1,800&family=Russo+One&family=Teko&family=Special+Elite&display=swap');
 
-
-
-/*
-背景蓝 #dff4fe
-文字蓝 #b9d9fb
-文字黑 #020001
-标题灰蓝色 #7f9098
-段落灰蓝色#67757c
-藕粉色 #c8abc2
-灰粉色 #d7cbe0
-浅粉色 #f6dce6
-粉色 #ebbcc6
-
-*/
 body {
     background-color: #dff4fe;
     height: 100%;
     margin: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .navbar {
     height: 80px;
     width: 100%;
@@ -41,11 +29,8 @@ body {
 
 .logo_part{
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-left: 5%;
-}
-.name {
-    margin-left: 2rem;
 }
 .logo_part img {
     width: 30px;
@@ -59,9 +44,9 @@ body {
 }
 .btn :hover{
     color: #b9d9fb;
-}
+}  
 
-.btnH, .btnA {
+.btnH, .btnA, .btnN, .btnC {
     text-decoration: none;
     color: #7f9098;
     margin: 0 1rem;
@@ -266,9 +251,22 @@ body {
     max-width: 50%;
 }
 
+.img_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .abm img {
     width: 400px;
     height: auto;
+}
+
+.social_media a {
+    font-size: 3rem;
+    margin: 1rem;
+    color: #67757c;
 }
 
 .intro {
@@ -335,6 +333,7 @@ form input, form textarea{
     width: 150px;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .contactbtn:hover {
